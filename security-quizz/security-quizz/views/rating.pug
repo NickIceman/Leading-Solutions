@@ -1,0 +1,53 @@
+extends layout
+
+block content
+  //.pb-2.mt-2.mb-4
+  .row
+    .col-md-12.qb
+      h3 Рейтинг : Топ 10 cегодня
+      .table100.ver1.m-b-110
+        table(data-vertable='ver1')
+          thead
+            tr.row100.head
+              th(data-column='column1')
+              th.column100.column1(data-column='column1') Имя
+              th.column100.column2(data-column='column2') Очки
+              th.column100.column2(data-column='column3') Приз
+          tbody
+            tr.row100
+              td.column10(data-column='column1')
+                img.avatar(src='/images/pineapple/kawaii_pineapple_flat-01.png')
+              td.column100.column1(data-column='column1') Гарольд
+              td.column100.column2(data-column='column2') 1000
+              td.column100.column2(data-column='column2') Ключ Kaspersky AV
+            tr.row100
+              td.column10(data-column='column1')
+                img.avatar(src='/images/pineapple/kawaii_pineapple_flat-02.png')
+              td.column100.column1(data-column='column1') Тони
+              td.column100.column2(data-column='column2') 925
+              td.column100.column2(data-column='column2') Ключ Norton AV
+            tr.row100
+              td.column10(data-column='column1')
+               img.avatar(src='/images/pineapple/kawaii_pineapple_flat-03.png')
+              td.column100.column1(data-column='column2') Тифани
+              td.column100.column2(data-column='column2') 500
+              td.column100.column2(data-column='column2') Скидка 10% Kiabi
+            tr.row100
+              td.column10(data-column='column1')
+                img.avatar(src='/images/pineapple/kawaii_pineapple_flat-04.png')
+              td.column100.column1(data-column='column2') Анатолий
+              td.column100.column2(data-column='column2') 477
+              td.column100.column2(data-column='column2') Скидка 5% Пятерочка
+            tr.row100
+              td.column10(data-column='column1')
+                img.avatar(src='/images/pineapple/kawaii_pineapple_flat-05.png')
+              td.column100.column1(data-column='column2') Симпсон
+              td.column100.column2(data-column='column2') 400
+            tr.row100
+              td.column10(data-column='column1')
+                img.avatar(src='/images/pineapple/kawaii_pineapple_flat-06.png')
+              td.column100.column1(data-column='column2') Вы
+              td.column100.column2(data-column='column2') 120
+      script(src='https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js')
+      script(src='https://yastatic.net/share2/share.js')
+      .ya-share2(data-services='collections,vkontakte,facebook,odnoklassniki,moimir')

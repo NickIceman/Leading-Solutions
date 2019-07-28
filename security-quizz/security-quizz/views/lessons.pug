@@ -1,0 +1,267 @@
+extends layout
+
+block content
+  style.
+    .timeline {
+      position: relative;
+    }
+
+    .timeline::before {
+      content: '';
+      background: #C5CAE9;
+      width: 5px;
+      height: 95%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .timeline-item {
+      width: 100%;
+      margin-bottom: 70px;
+    }
+
+    .timeline-item:nth-child(even) .timeline-content {
+      float: right;
+      padding: 40px 30px 10px 30px;
+    }
+
+    .timeline-item:nth-child(even) .timeline-content .date {
+      right: auto;
+      left: 0;
+    }
+
+    .timeline-item:nth-child(even) .timeline-content::after {
+      content: '';
+      position: absolute;
+      border-style: solid;
+      width: 0;
+      height: 0;
+      top: 30px;
+      left: -15px;
+      border-width: 10px 15px 10px 0;
+      border-color: transparent #f5f5f5 transparent transparent;
+    }
+
+    .timeline-item::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    .timeline-content {
+      position: relative;
+      width: 45%;
+      padding: 10px 30px;
+      border-radius: 14px;
+      background: #f5f5f5;
+      box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
+    }
+
+    .timeline-content::after {
+      content: '';
+      position: absolute;
+      border-style: solid;
+      width: 0;
+      height: 0;
+      top: 30px;
+      right: -15px;
+      border-width: 10px 0 10px 15px;
+      border-color: transparent transparent transparent #f5f5f5;
+    }
+
+    .timeline-img {
+      width: 30px;
+      height: 30px;
+      background: #3F51B5;
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      margin-top: 25px;
+      margin-left: -15px;
+    }
+
+    .timeline-card {
+      padding: 0 !important;
+    }
+
+    .timeline-card p {
+      padding: 0 20px;
+    }
+
+    .timeline-card a {
+      margin-left: 20px;
+    }
+
+    .timeline-item .timeline-img-header {
+      background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://picsum.photos/1000/800/?random") center center no-repeat;
+      background-size: cover;
+      border-top-left-radius: 14px;
+      border-top-right-radius: 14px;
+    }
+
+    .timeline-img-header {
+      height: 200px;
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .timeline-img-header h2 {
+      color: #FFFFFF;
+      position: absolute;
+      bottom: 5px;
+      left: 20px;
+      border-radius: 14px;
+    }
+
+
+    .date {
+      background: #FF4081;
+      display: inline-block;
+      color: #FFFFFF;
+      padding: 10px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-radius: 14px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .timeline::before {
+        left: 50px;
+      }
+
+      .timeline .timeline-img {
+        left: 50px;
+      }
+
+      .timeline .timeline-content {
+        max-width: 100%;
+        width: auto;
+        margin-left: 70px;
+      }
+
+      .timeline .timeline-item:nth-child(even) .timeline-content {
+        float: none;
+      }
+
+      .timeline .timeline-item:nth-child(odd) .timeline-content::after {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        width: 0;
+        height: 0;
+        top: 30px;
+        left: -15px;
+        border-width: 10px 15px 10px 0;
+        border-color: transparent #f5f5f5 transparent transparent;
+      }
+    }
+  ul.nav.nav-tabs
+    li.nav-item
+      a.nav-link.active(data-toggle='tab', href='#home') Базовое обучение
+    li.nav-item
+      a.nav-link(data-toggle='tab', href='#menu1') Продвинутые уроки
+    //li.nav-item
+      a.nav-link(data-toggle='tab', href='#menu2') Темы
+  // Tab panes
+  .tab-content
+    #home.tab-pane.container.active
+      p
+      //iframe(width='560', height='315', src='https://www.youtube.com/embed/c4-H_kC3T8Y', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
+      section.timeline
+        .container
+          .timeline-item
+            .timeline-img
+            .timeline-content.js--fadeInLeft
+              h2 Урок 1 : Финансовая безопасность
+              .date 1 МАЙ 2019
+              p
+                | Разнообразный и богатый опыт реализация намеченных плановых заданий требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Разнообразный и богатый опыт начало повседневной работы по формированию позиции позволяет оценить значение соответствующий условий активизации.
+              a.bnt-more(href='javascript:void(0)') Начать
+          .timeline-item
+            .timeline-img
+            .timeline-content.timeline-card.js--fadeInRight
+              .timeline-img-header.lesson1
+                h2 Урок 2 : Веб безопасность
+              .date 25 МАЙ 2019
+              p
+                | Разнообразный и богатый опыт реализация намеченных плановых заданий требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Разнообразный и богатый опыт начало повседневной работы по формированию позиции позволяет оценить значение соответствующий условий активизации.
+              a.bnt-more(href='javascript:void(0)') Начать
+          .timeline-item
+            .timeline-img
+            .timeline-content.js--fadeInLeft
+              .date 3 ИЮНЬ 2019
+              h2 Урок 3 : Почта
+              blockquote
+                | Разнообразный и богатый опыт реализация намеченных плановых заданий требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Разнообразный и богатый опыт начало повседневной работы по формированию позиции позволяет оценить значение соответствующий условий активизации.
+          .timeline-item
+            .timeline-img
+            .timeline-content.js--fadeInRight
+              h2 Урок 4 : Телефон
+              .date 22 ИЮНЬ 2019
+              p
+                | Разнообразный и богатый опыт реализация намеченных плановых заданий требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Разнообразный и богатый опыт начало повседневной работы по формированию позиции позволяет оценить значение соответствующий условий активизации.
+              a.bnt-more(href='javascript:void(0)') Начать
+          .timeline-item
+            .timeline-img
+            .timeline-content.timeline-card.js--fadeInLeft
+              .timeline-img-header.lesson2
+                h2 Урок 5 : Вирусы
+              .date 10 ИЮЛЬ 2019
+              p
+                | Разнообразный и богатый опыт реализация намеченных плановых заданий требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Разнообразный и богатый опыт начало повседневной работы по формированию позиции позволяет оценить значение соответствующий условий активизации.
+              a.bnt-more(href='javascript:void(0)') Начать
+          .timeline-item
+            .timeline-img
+            .timeline-content.timeline-card.js--fadeInRight
+              .timeline-img-header.lesson3
+                h2 Урок 6 : П/О / Трояны
+              .date 30 ИЮЛЬ 2019
+              p
+                | Разнообразный и богатый опыт реализация намеченных плановых заданий требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Разнообразный и богатый опыт начало повседневной работы по формированию позиции позволяет оценить значение соответствующий условий активизации.
+              a.bnt-more(href='javascript:void(0)') Начать
+          .timeline-item
+            .timeline-img
+            .timeline-content.js--fadeInLeft
+              .date 5 АВГ 2019
+              h2 Тест
+              blockquote
+              | Разнообразный и богатый опыт реализация намеченных плановых заданий требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Разнообразный и богатый опыт начало повседневной работы по формированию позиции позволяет оценить значение соответствующий условий активизации.
+          .timeline-item
+            .timeline-img
+            .timeline-content.timeline-card.js--fadeInRight
+              .timeline-img-header.lesson4
+                h2 Урок 7 : Банкоматы
+              .date 19 АВГ 2019
+              p
+                | Разнообразный и богатый опыт реализация намеченных плановых заданий требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Разнообразный и богатый опыт начало повседневной работы по формированию позиции позволяет оценить значение соответствующий условий активизации.
+              a.bnt-more(href='javascript:void(0)') Начать
+          .timeline-item
+            .timeline-img
+            .timeline-content.js--fadeInLeft
+              .date 1 СЕН 2019
+              h2 Урок 8 : Фишинг
+              p
+                | Разнообразный и богатый опыт реализация намеченных плановых заданий требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Разнообразный и богатый опыт начало повседневной работы по формированию позиции позволяет оценить значение соответствующий условий активизации.
+              a.bnt-more(href='javascript:void(0)') Начать
+
+    #menu1.tab-pane.container.fade
+      p
+      p Вам необходимо преобрести продвинутый курс
+      img.float-right(src='/images/video-placeholder.jpg', width='560', height='315', title='Вам необходимо преобрести продвинутый курс')
+      a.btn.btn-primary.nav-link.float-left(href='#') Купить
+      img.float-right(src='/images/video-placeholder.jpg', width='560', height='315', title='Вам необходимо преобрести продвинутый курс')
+      a.btn.btn-primary.nav-link.float-left(href='#') Купить
+      img.float-right(src='/images/video-placeholder.jpg', width='560', height='315', title='Вам необходимо преобрести продвинутый курс')
+      a.btn.btn-primary.nav-link.float-left(href='#') Купить
+      img.float-right(src='/images/video-placeholder.jpg', width='560', height='315', title='Вам необходимо преобрести продвинутый курс')
+      a.btn.btn-primary.nav-link.float-left(href='#') Купить
+      img.float-right(src='/images/video-placeholder.jpg', width='560', height='315', title='Вам необходимо преобрести продвинутый курс')
+      a.btn.btn-primary.nav-link.float-left(href='#') Купить
+      img.float-right(src='/images/video-placeholder.jpg', width='560', height='315', title='Вам необходимо преобрести продвинутый курс')
+      a.btn.btn-primary.nav-link.float-left(href='#') Купить
+      img.float-right(src='/images/video-placeholder.jpg', width='560', height='315', title='Вам необходимо преобрести продвинутый курс')
+      a.btn.btn-primary.nav-link.float-left(href='#') Купить
+      img.float-right(src='/images/video-placeholder.jpg', width='560', height='315', title='Вам необходимо преобрести продвинутый курс')
+      a.btn.btn-primary.nav-link.float-left(href='#') Купить

@@ -1,0 +1,489 @@
+.container-table100 {
+    width: 100%;
+    min-height: 100vh;
+    background: #d1d1d1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 33px 30px
+}
+
+.wrap-table100 {
+    width: 1300px
+}
+
+table {
+    width: 100%;
+    background-color: #fff
+}
+
+th,
+td {
+    font-weight: unset;
+    padding-right: 10px
+}
+
+.column10 {
+    width: 30px;
+    padding-left: 25px
+}
+
+.column100 {
+    width: 130px;
+    padding-left: 25px
+}
+
+.column100.column1 {
+    width: 265px;
+    padding-left: 42px
+}
+
+.row100.head th {
+    padding-top: 24px;
+    padding-bottom: 20px
+}
+
+.row100 td {
+    padding-top: 18px;
+    padding-bottom: 14px
+}
+
+.table100.ver1 td {
+    font-size: 14px;
+    color: gray;
+    line-height: 1.4
+}
+
+.table100.ver1 th {
+    font-size: 12px;
+    color: #fff;
+    line-height: 1.4;
+    text-transform: uppercase;
+    background-color: #36304a
+}
+
+.table100.ver1 .row100:hover {
+    background-color: #f2f2f2
+}
+
+.table100.ver1 .hov-column-ver1 {
+    background-color: #f2f2f2
+}
+
+.table100.ver1 .hov-column-head-ver1 {
+    background-color: #484848!important
+}
+
+.table100.ver1 .row100 td:hover {
+    background-color: #6c7ae0;
+    color: #fff
+}
+
+.table100.ver2 td {
+    font-size: 14px;
+    color: gray;
+    line-height: 1.4
+}
+
+.table100.ver2 th {
+    font-size: 12px;
+    color: #fff;
+    line-height: 1.4;
+    text-transform: uppercase;
+    background-color: #333
+}
+
+.table100.ver2 .row100:hover td {
+    background-color: #83d160;
+    color: #fff
+}
+
+.table100.ver2 .hov-column-ver2 {
+    background-color: #83d160;
+    color: #fff
+}
+
+.table100.ver2 .hov-column-head-ver2 {
+    background-color: #484848!important
+}
+
+.table100.ver2 .row100 td:hover {
+    background-color: #57b846;
+    color: #fff
+}
+
+.table100.ver2 tbody tr:nth-child(even) {
+    background-color: #eaf8e6
+}
+
+.table100.ver2 td {
+    font-size: 14px;
+    color: gray;
+    line-height: 1.4
+}
+
+.table100.ver2 th {
+    font-size: 12px;
+    color: #fff;
+    line-height: 1.4;
+    text-transform: uppercase;
+    background-color: #333
+}
+
+.table100.ver2 .row100:hover td {
+    background-color: #83d160;
+    color: #fff
+}
+
+.table100.ver2 .hov-column-ver2 {
+    background-color: #83d160;
+    color: #fff
+}
+
+.table100.ver2 .hov-column-head-ver2 {
+    background-color: #484848!important
+}
+
+.table100.ver2 .row100 td:hover {
+    background-color: #57b846;
+    color: #fff
+}
+
+.table100.ver3 tbody tr {
+    border-bottom: 1px solid #e5e5e5
+}
+
+.table100.ver3 td {
+    font-size: 14px;
+    color: gray;
+    line-height: 1.4
+}
+
+.table100.ver3 th {
+    font-size: 12px;
+    color: #fff;
+    line-height: 1.4;
+    text-transform: uppercase;
+    background-color: #6c7ae0
+}
+
+.table100.ver3 .row100:hover td {
+    background-color: #fcebf5
+}
+
+.table100.ver3 .hov-column-ver3 {
+    background-color: #fcebf5
+}
+
+.table100.ver3 .hov-column-head-ver3 {
+    background-color: #7b88e3!important
+}
+
+.table100.ver3 .row100 td:hover {
+    background-color: #e03e9c;
+    color: #fff
+}
+
+.table100.ver4 td {
+    font-size: 14px;
+    color: gray;
+    line-height: 1.4
+}
+
+.table100.ver4 th {
+    font-size: 12px;
+    color: #fff;
+    line-height: 1.4;
+    text-transform: uppercase;
+    background-color: #fa4251
+}
+
+.table100.ver4 .row100:hover td {
+    color: #fa4251
+}
+
+.table100.ver4 .hov-column-ver4 {
+    background-color: #ffebed
+}
+
+.table100.ver4 .hov-column-head-ver4 {
+    background-color: #f95462!important
+}
+
+.table100.ver4 .row100 td:hover {
+    background-color: #ffebed;
+    color: #fa4251
+}
+
+.table100.ver5 tbody tr:nth-child(even) {
+    background-color: #e9faff
+}
+
+.table100.ver5 td {
+    font-size: 14px;
+    color: gray;
+    line-height: 1.4;
+    position: relative
+}
+
+.table100.ver5 th {
+    font-size: 12px;
+    color: #fff;
+    line-height: 1.4;
+    text-transform: uppercase;
+    background-color: #002933
+}
+
+.table100.ver5 .row100:hover td {
+    color: #fe3e64
+}
+
+.table100.ver5 .hov-column-ver5 {
+    color: #fe3e64
+}
+
+.table100.ver5 .hov-column-ver5::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    border-left: 1px solid #f2f2f2;
+    border-right: 1px solid #f2f2f2
+}
+
+.table100.ver5 .hov-column-head-ver5 {
+    background-color: #1a3f48!important;
+    color: #fe3e64
+}
+
+.table100.ver5 .row100 td:hover {
+    color: #fe3e64
+}
+
+.table100.ver5 .row100 td:hover:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    border: 1px solid #fe3e64
+}
+
+.table100.ver6 {
+    border-radius: 16px;
+    overflow: hidden;
+    background: #7918f2;
+    background: -webkit-linear-gradient(-68deg, #ac32e4, #4801ff);
+    background: -o-linear-gradient(-68deg, #ac32e4, #4801ff);
+    background: -moz-linear-gradient(-68deg, #ac32e4, #4801ff);
+    background: linear-gradient(-68deg, #ac32e4, #4801ff)
+}
+
+.table100.ver6 table {
+    background-color: transparent
+}
+
+.table100.ver6 td {
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.4
+}
+
+.table100.ver6 th {
+    font-size: 12px;
+    color: #fff;
+    line-height: 1.4;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, .32)
+}
+
+.table100.ver6 .row100:hover td {
+    background-color: rgba(255, 255, 255, .1)
+}
+
+.table100.ver6 .hov-column-ver6 {
+    background-color: rgba(255, 255, 255, .1)
+}
+
+.table100.ver6 .row100 td:hover {
+    background-color: rgba(255, 255, 255, .2)
+}
+
+
+
+/* profile */
+
+img.achievements {
+    width: 100%;
+}
+
+/* about us */
+.blog-post {
+    position: relative;
+    padding: 40px;
+    margin: 10px 0;
+    border: 1px solid rgba(255,255,255,0.5);
+    /*color: #ffffff;*/
+    border-radius: 2%;
+    background: white;
+    text-align: center;
+}
+
+.blog-post:hover {
+    border: 2px solid #ffffff;
+    transition: all .2s ease-in-out;
+}
+
+.blog-post h4 {
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.blog-post p {
+    /*color: rgba(255,255,255,0.5);*/
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.blog-post i {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+img.hero1 {
+    width:100%;
+}
+
+.answer {
+    /*width: 350px;*/
+    /*height: 120px !important;*/
+    /*letter-spacing: 0.1px;*/
+    width: 350px;
+    letter-spacing: 0.1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+img.avatar{
+    border-radius: 60%;
+    width: 50px;
+}
+
+
+img.header {
+    width: 100%;
+}
+
+img.half {
+    align-content: center;
+    width: 20%;
+}
+
+#value {
+    font-size:55px;
+    display: inline;
+}
+
+
+.wrapper {
+    position: relative;
+    min-height: 100vh;
+}
+
+[class|="confetti"] {
+    position: absolute;
+}
+
+.red {
+    background-color: #E94A3F;
+}
+
+.yellow {
+    background-color: #FAA040;
+}
+
+.blue {
+    background-color: #5FC9F5;
+}
+
+.speech-bubble {
+    position: relative;
+    /* background: #00aabb; */
+    background: #ffffff;
+    padding: 38px;
+    border-radius: 15px;
+    box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
+    /* top: -90px; */
+    /* top: -90px; */
+    width: 85%;
+}
+
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 37px solid transparent;
+    border-left-color: #ffffff;
+    border-right: 0;
+    border-top: 0;
+    margin-top: -18.5px;
+    margin-right: -37px;
+}
+
+
+.speech-bubble h2 {
+    font-family: Geometria;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: #293074
+}
+
+.speech-bubble p {
+    font-family: Geometria;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #293074;
+}
+
+
+.timeline-content h2 {
+    padding-top: 20px;
+}
+
+.lesson1 {
+    background: url('/images/lessons/lesson-1.png') !important;
+}
+.lesson2 {
+    background: url('/images/lessons/lessons-2.png') !important;
+}
+.lesson3 {
+    background: url('/images/lessons/lessons-3.png') !important;
+}
+.lesson4 {
+    background: url('/images/lessons/lessons-4.png') !important;
+}
+.lesson5 {
+    background: url('/images/lessons/lessons-5.png') !important;
+}
+.lesson6 {
+    background: url('/images/lessons/lessons-6.png') !important;
+}

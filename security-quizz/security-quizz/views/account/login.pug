@@ -1,0 +1,47 @@
+extends ../layout
+
+block content
+  .pb-2.mt-2.mb-4.border-bottom
+    h3 Войти
+  form(method='POST')
+    input(type='hidden', name='_csrf', value=_csrf)
+    .form-group.row
+      label.col-md-3.col-form-label.font-weight-bold.text-right(for='email') Почта
+      .col-md-7
+        input.form-control(type='email', name='email', id='email', placeholder='Email', autofocus, autocomplete='email', required)
+    .form-group.row
+      label.col-md-3.col-form-label.font-weight-bold.text-right(for='password') Пароль
+      .col-md-7
+        input.form-control(type='password', name='password', id='password', placeholder='Password', autocomplete='current-password', required)
+    .form-group
+      .offset-md-3.col-md-7.pl-2
+        button.btn.btn-primary(type='submit')
+          i.far.fa-user.fa-sm
+          | Войти
+        a.btn.btn-link(href='/forgot') Забыли пароль?
+    .form-group
+      .offset-md-3.col-md-7.pl-2
+        hr
+    .form-group
+      .offset-md-3.col-md-7.pl-2
+        a.btn.btn-block.btn-snapchat.btn-social(href='/auth/snapchat')
+          i.fab.fa-snapchat-ghost.fa-sm
+          | Войти c Snapchat
+        a.btn.btn-block.btn-facebook.btn-social(href='/auth/facebook')
+          i.fab.fa-facebook-f.fa-sm
+          | Войти c Facebook
+        //a.btn.btn-block.btn-twitter.btn-social(href='/auth/twitter')
+          i.fab.fa-twitter.fa-sm
+          | Войти Twitter
+        a.btn.btn-block.btn-google.btn-social(href='/auth/google')
+          i.fab.fa-google-plus-g.fa-xs
+          | Войти c Google
+        //a.btn.btn-block.btn-github.btn-social(href='/auth/github')
+          i.fab.fa-github.fa-sm
+          | Sign in with GitHub
+        //a.btn.btn-block.btn-linkedin.btn-social(href='/auth/linkedin')
+          i.fab.fa-linkedin-in.fa-sm
+          | Sign in with LinkedIn
+        a.btn.btn-block.btn-instagram.btn-social(href='/auth/instagram')
+          i.fab.fa-instagram.fa-sm
+          | Войти c Instagram

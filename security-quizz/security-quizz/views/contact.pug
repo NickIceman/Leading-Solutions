@@ -1,0 +1,56 @@
+extends layout
+
+block content
+  .pb-2.mt-2.mb-4.border-bottom
+    h3.text-center Команда - Leading Solutions
+    section#blog
+      .container
+        .row.row-flex.margintop-lg
+          .col-lg-4.col-md-12.d-flex
+            .blog-post.col
+              h4 Эдгар
+              h7 Backend/Frontend
+              img.hero1(src='/images/pineapple/kawaii_pineapple_flat-31.png', alt='avatar')
+              p
+              p Стек: Node.JS, JavaScript, HTML, CSS
+          .col-lg-4.col-md-12.d-flex
+            .blog-post.col
+              h4 Екатерина
+              h5 Design
+              img.hero1(src='/images/pineapple/kawaii_pineapple_flat-46.png', alt='avatar')
+              p
+              p Стек: FIGMA, Photoshop, Illustrator
+          .col-lg-4.col-md-12.d-flex
+            .blog-post.col
+              h4 Виктор
+              h5 Frontend
+              img.hero1(src='/images/pineapple/kawaii_pineapple_flat-02.png', alt='avatar')
+              p
+              p Стек: HTML5, CSS3, JavaScript. GeekUniversity: факультет Web-разработки.
+    section#call-to-action
+      .container
+        .heading-content.text-center
+          h2 Начинаете новый проект?
+          p Присылайте техническое задание.
+
+
+  form(method='POST')
+    input(type='hidden', name='_csrf', value=_csrf)
+    if (unknownUser)
+      .form-group.row
+        label(class='col-md-2 col-form-label font-weight-bold', for='name') Имя
+        .col-md-8
+          input.form-control(type='text', name='name', id='name', autocomplete='name', autofocus=true)
+      .form-group.row
+        label(class='col-md-2 col-form-label font-weight-bold', for='email') Почта
+        .col-md-8
+          input.form-control(type='text', name='email', id='email', autocomplete='email')
+    .form-group.row
+      label(class='col-md-2 col-form-label font-weight-bold', for='message') Напишите нам
+      .col-md-8
+        textarea.form-control(name='message', id='message', rows='7', autofocus=(!unknownUser).toString())
+    .form-group
+      .offset-md-2.col-md-8.p-1
+        button.btn.btn-primary(type='submit')
+          i.far.fa-envelope.fa-sm
+          | Отправить

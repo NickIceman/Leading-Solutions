@@ -1,0 +1,44 @@
+extends layout
+
+block content
+  h1.qt.ml6
+    span.text-wrapper
+      //span.letter #{question}
+  .row#question-reveal
+    .col-md-12
+      img.hero(src=heroimg)
+      //img.main(src=themeimg )
+      .speech-bubble
+        h2 #{heading}
+        p #{body}
+    .col-md-12.qb
+      p
+        button.btn.btn-grad1.btn-2.btn-2g.answer.ans1 #{answer1}
+        button.btn.btn-grad1.btn-2.btn-2g.answer.ans2 #{answer2}
+      p
+        button.btn.btn-grad1.btn-2.btn-2g.answer.ans3 #{answer3}
+        button.btn.btn-grad1.btn-2.btn-2g.answer.ans4 #{answer4}
+  .row#question-welcome
+    .col-md-12
+      img.hero(src=heroimg)
+      //img.main(src=themeimg )
+      .speech-bubble
+        h2 Добро пожаловать!
+        p Я Ваш учитель :)
+        p Моя задача сделать из Вас эксперта по компьютерной безопасности.
+        p Вы научитесь, как не попасться на мошеннические уловки. Финансы, интернет, почта, телефон, банкоматы, фишинг, трояны не будут иметь секретов для Вас.
+
+  script.
+    var counterQuestions = +sessionStorage.getItem('counterQuestions');
+    console.log('home q = ', counterQuestions);
+    if (counterQuestions === 0) {
+      var x = document.getElementById("question-reveal");
+      x.style.display = "none";
+      var y = document.getElementById("question-welcome");
+      y.style.display = "block";
+    } else {
+      var x = document.getElementById("question-reveal");
+      x.style.display = "block";
+      var y = document.getElementById("question-welcome");
+      y.style.display = "none";
+    }
